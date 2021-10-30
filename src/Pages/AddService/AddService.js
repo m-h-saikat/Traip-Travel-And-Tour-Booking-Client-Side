@@ -10,7 +10,7 @@ const AddService = () => {
       .post("https://desolate-oasis-18622.herokuapp.com/services", data)
       .then((res) => {
         if (res.data.insertedId) {
-          alert("adder successfully");
+          alert("Successfully Add This Package");
           reset();
         }
       });

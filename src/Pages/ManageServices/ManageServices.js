@@ -16,7 +16,7 @@ const ManageServices = () => {
       .then((data) => {
         console.log(data);
         if (data.deletedCount) {
-          alert("Successfully Deleted");
+          alert("Successfully Delete This Package");
           const remaining = services.filter(services._id !== id);
           setServices(remaining);
         }
