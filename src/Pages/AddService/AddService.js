@@ -17,8 +17,8 @@ const AddService = () => {
   };
 
   return (
-    <div class="container">
-      <h2 className=" my-5 AddServiceHeader p-3 m-3 mx-auto">
+    <div class=" AddService-container p-4">
+      <h2 className="  AddServiceHeader p-3  mx-auto">
         Add More Package
       </h2>
 

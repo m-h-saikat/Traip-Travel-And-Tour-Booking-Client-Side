@@ -2,6 +2,7 @@ import React from "react";
 import {  useLocation, useHistory } from "react-router-dom";
 import useAuth from "./../../../hooks/useAuth";
 import Logo from "../../../images/Logo.png";
+import './Login.css'
 import GoogleImage from "../../../images/Google Logo.png";
 const Login = () => {
   const { signInUsingGoogle, user, setUser } = useAuth();

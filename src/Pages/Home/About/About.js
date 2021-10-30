@@ -1,6 +1,6 @@
 import React from "react";
 import ABoutImg from "../../../images/About.jpg";
-import AboutHeader from "../../../images/About-Header.jpg";
+import AboutHeader from "../../../images/About-Header.png";
 import "./About.css";
 const About = () => {
   return (
@@ -10,11 +10,11 @@ const About = () => {
           src={AboutHeader}
           alt=""
           width="100%"
-          height="200px"
+          height="300px"
           className="mb-3"
         />
       </div>
-      <h2 className=" my-5 About-header p-3 m-3 mx-auto"> About Us</h2>
+      <h2 className=" my-5 About-header p-3 m-3 mx-auto"> About Traip Travel And Tour Booking</h2>
       <div className=" mb-4 ">
         <div className="row d-flex">
           <div className="col-md-6 ">
