@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="card h-60 shadow p-3  me-5 contact border border-light rounded">
           <h4>
             Location Here <hr />
-          Dhanmondi , Dhaka-1630
+            Dhanmondi , Dhaka-1630
           </h4>
         </div>
         <div className="card h-60 shadow p-3  me-5 contact border border-light rounded">
@@ -38,7 +38,9 @@ const Contact = () => {
       {/*FAQ Start    */}
 
       <div className="container">
-      <h2 className=" my-5 contact-header p-3 m-3 mx-auto">Our Most Desire Packages</h2>
+        <h2 className=" my-5 contact-header p-3 m-3 mx-auto">
+          Our Most Desire Packages
+        </h2>
 
         <div className="container d-lg-flex">
           <div className="mb-3 col-md-6">
@@ -57,7 +59,7 @@ const Contact = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-What are the most surreal places to visit?
+                    What are the most surreal places to visit?
                   </button>
                 </h2>
                 <div
@@ -68,7 +70,11 @@ What are the most surreal places to visit?
                 >
                   <div className="accordion-body">
                     <p>
-                    Some of the strangest places on earth are also the most sublime: from the UFO-like dragon's blood trees in Yemen to a rainbow-colored hot spring in Yellowstone to a bridge in Germany that looks like a leftover prop from Lord of the Rings.
+                      Some of the strangest places on earth are also the most
+                      sublime: from the UFO-like dragon's blood trees in Yemen
+                      to a rainbow-colored hot spring in Yellowstone to a bridge
+                      in Germany that looks like a leftover prop from Lord of
+                      the Rings.
                     </p>
                   </div>
                 </div>
@@ -83,7 +89,7 @@ What are the most surreal places to visit?
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-Do you have to be rich to travel the world?
+                    Do you have to be rich to travel the world?
                   </button>
                 </h2>
                 <div
@@ -94,7 +100,15 @@ Do you have to be rich to travel the world?
                 >
                   <div className="accordion-body">
                     <p>
-                    The beauty of travel is that it’s accessible to everyone, in some form. You don't have to go far to experience a new culture. Plus there are several ways to make most flights affordable, whether by being flexible, searching on new websites like Skypicker and Fareness, or just by planning ahead. Know the best time to book a flight: 57 days in advance for domestic flights, 117 for international. Then again, you could just make traveling the world your 9-to-5.
+                      The beauty of travel is that it’s accessible to everyone,
+                      in some form. You don't have to go far to experience a new
+                      culture. Plus there are several ways to make most flights
+                      affordable, whether by being flexible, searching on new
+                      websites like Skypicker and Fareness, or just by planning
+                      ahead. Know the best time to book a flight: 57 days in
+                      advance for domestic flights, 117 for international. Then
+                      again, you could just make traveling the world your
+                      9-to-5.
                     </p>
                   </div>
                 </div>
@@ -109,7 +123,8 @@ Do you have to be rich to travel the world?
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-What are some common items savvy travelers bring with them (that less-savvy travelers don’t)?
+                    What are some common items savvy travelers bring with them
+                    (that less-savvy travelers don’t)?
                   </button>
                 </h2>
                 <div
@@ -120,7 +135,18 @@ What are some common items savvy travelers bring with them (that less-savvy trav
                 >
                   <div className="accordion-body">
                     <p>
-                    Don’t forget a small power strip—ideal for sharing a crowded outlet in an airport, and a simple way to keep all devices close by once at a hotel. (Combine that with a Zolt—which powers a laptop and two devices with a charger the size of a lipstick—and it’s even handier.) Keep a photograph of your luggage and passport on your smartphone; lose either of them, and you’ll be grateful for the reference. Pack a scarf—always. And since calling Nespresso coffee is an insult to baristas everywhere, the best in-room alternate is the Aeropress, a nifty gizmo that’s portable, light, and makes killer morning joe almost anywhere.
+                      Don’t forget a small power strip—ideal for sharing a
+                      crowded outlet in an airport, and a simple way to keep all
+                      devices close by once at a hotel. (Combine that with a
+                      Zolt—which powers a laptop and two devices with a charger
+                      the size of a lipstick—and it’s even handier.) Keep a
+                      photograph of your luggage and passport on your
+                      smartphone; lose either of them, and you’ll be grateful
+                      for the reference. Pack a scarf—always. And since calling
+                      Nespresso coffee is an insult to baristas everywhere, the
+                      best in-room alternate is the Aeropress, a nifty gizmo
+                      that’s portable, light, and makes killer morning joe
+                      almost anywhere.
                     </p>
                   </div>
                 </div>
@@ -135,7 +161,7 @@ What are some common items savvy travelers bring with them (that less-savvy trav
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-What’s it really like to be a travel writer?
+                    What’s it really like to be a travel writer?
                   </button>
                 </h2>
                 <div
@@ -146,7 +172,15 @@ What’s it really like to be a travel writer?
                 >
                   <div className="accordion-body">
                     <p>
-                    "For every beautiful beach hideaway, there’s been a missed flight or delay; for every delicious meal, a nasty case of 'Delhi belly," says Traveler contributing editor Krisanne Fordham in her story on this very topic. In short: Traveling for a living is equal parts rewarding and challenging, satisfying and smelly. It teaches you to live—not linger, but really live—outside your comfort zone, to always pack a portable Wi-Fi hotspot, and to never check your bag again.
+                      "For every beautiful beach hideaway, there’s been a missed
+                      flight or delay; for every delicious meal, a nasty case of
+                      'Delhi belly," says Traveler contributing editor Krisanne
+                      Fordham in her story on this very topic. In short:
+                      Traveling for a living is equal parts rewarding and
+                      challenging, satisfying and smelly. It teaches you to
+                      live—not linger, but really live—outside your comfort
+                      zone, to always pack a portable Wi-Fi hotspot, and to
+                      never check your bag again.
                     </p>
                   </div>
                 </div>

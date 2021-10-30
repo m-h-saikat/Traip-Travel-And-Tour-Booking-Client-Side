@@ -1,19 +1,17 @@
-import './App.css';
-import Home from './Pages/Home/Home/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NotFound from './Pages/NotFound/NotFound';
-import Booking from './Pages/Booking/Booking/Booking';
-import Login from './Pages/Login/Login/Login';
-import Header from './Pages/Shared/Header/Header';
-import AuthProvider from './contexts/AuthProvider';
-import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
-import AddService from './Pages/AddService/AddService';
-import ManageServices from './Pages/ManageServices/ManageServices';
-import Footer from './Pages/Shared/Header/Footer/Footer';
-import About from './Pages/Home/About/About';
-import Offer from './Pages/Home/Offer/Offer';
-import Contact from './Pages/Contact/Contact';
-
+import "./App.css";
+import Home from "./Pages/Home/Home/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NotFound from "./Pages/NotFound/NotFound";
+import Booking from "./Pages/Booking/Booking/Booking";
+import Login from "./Pages/Login/Login/Login";
+import Header from "./Pages/Shared/Header/Header";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
+import AddService from "./Pages/AddService/AddService";
+import ManageServices from "./Pages/ManageServices/ManageServices";
+import Footer from "./Pages/Shared/Header/Footer/Footer";
+import About from "./Pages/Home/About/About";
+import Contact from "./Pages/Contact/Contact";
+import AuthProvider from "./hooks/AuthProvider";
 
 function App() {
   return (
@@ -34,7 +32,7 @@ function App() {
             <Route path="/About">
               <About></About>
             </Route>
-           
+
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
             </PrivateRoute>
