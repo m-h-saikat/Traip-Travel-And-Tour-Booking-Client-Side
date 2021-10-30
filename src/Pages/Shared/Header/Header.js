@@ -19,7 +19,6 @@ const Header = () => {
                         <Nav.Link as={HashLink} to="/home#home"><button>Home</button></Nav.Link>
                         <Nav.Link as={HashLink} to="/About"><button>About</button></Nav.Link>
                         <Nav.Link as={HashLink} to="/home#services"><button>Package</button></Nav.Link>
-                        <Nav.Link as={HashLink} to="/Offer"><button>Offer</button></Nav.Link>
                         <Nav.Link as={HashLink} to="/addService"><button>Add Package</button></Nav.Link>
                         <Nav.Link as={HashLink} to="/manageServices"><button>Manage Package</button></Nav.Link>
                         <Nav.Link as={HashLink} to="/Contact"><button>Contact</button></Nav.Link>

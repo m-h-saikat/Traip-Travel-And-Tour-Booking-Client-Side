@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-
+import './Booking.css'
+import Logo from '../../../images/Logo.png'
+import useAuth from '../../../hooks/useAuth';
 const Booking = () => {
     const { serviceId } = useParams();
-    const [services, setServices] = useState();
+    const [services, setServices] = useState({});
+    const { user } = useAuth();
 
 
     useEffect(() => {
@@ -13,16 +16,75 @@ const Booking = () => {
             .then(data => setServices(data))
     }, []);
 
-
-      console.log(services);
-
     return (
-        <div>
+      <div className="  Booking-Container  " id="About">
+      <div>
+      <h2 className=" my-5 Booking-header p-3 m-3 mx-auto"> Confirm Your Booking </h2>
+      </div>
+<div className=" mb-4 ">
+  <div className="row d-flex">
+    <div className="col-md-6 ">
+    <div class="card m-5" >
+  <img class="card-img-top " src={services.Img} alt="Card image cap"/>
+  <div class="card-body">
+    <h2 class="card-title text-danger">{services.name}</h2>
+    <h6 class="card-text">{services.Description} </h6>
+    <h4 class="card-text text-primary">Budget: ${services.price}</h4>
+     </div>
+</div>
+    </div>
+    <div className="col-md-6  p-5 my-auto mx-auto">
+     
 
-            {/* <h2>Details of {services.name}</h2> */}
-            <h2>Your  Booked Tour Package {serviceId}</h2>
-        </div>
+    <div class="card m-2" >
+
+  <div class="card-body">
+    <h2 class="card-title text-danger">Hi {user.displayName} !!</h2>
+   <small>Please Confirm Your Booking</small>
+    <form class=" mx-auto Confiramtion">
+        
+        <fieldset>
+          <h4>Name :{user.displayName}</h4>
+          <h4>Email :{user.email}</h4>
+
+        </fieldset>
+        <fieldset >
+          <textarea placeholder="Address" tabindex="5" required ></textarea>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Contact Number" type="number" minlength="11" maxlength="11" tabindex="1" required />
+        </fieldset>
+        
+        <fieldset>
+            <input placeholder="Cupon Code" type="text" tabindex="1"  autofocus />
+          </fieldset>
+       
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="btn btn-primary">Confirm</button>
+        </fieldset>
+        
+        </form>
+        
+
+
+     </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
     );
 };
 
 export default Booking;
+
+
+
+
+
+
+
+
+
+
