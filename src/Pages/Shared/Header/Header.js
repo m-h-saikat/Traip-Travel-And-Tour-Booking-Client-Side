@@ -41,12 +41,12 @@ const Header = () => {
             </Nav.Link>
             {user.email && (
               <Nav.Link as={HashLink} to="/addService">
-                <button>Add Package</button>
+                <button>Add A New Package</button>
               </Nav.Link>
             )}
             {user.email && (
               <Nav.Link as={HashLink} to="/manageServices">
-                <button>Manage Package</button>
+                <button>Manage All Package</button>
               </Nav.Link>
             )}
             <Nav.Link as={HashLink} to="/Contact">

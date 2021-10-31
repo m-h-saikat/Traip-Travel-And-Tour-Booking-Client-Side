@@ -33,7 +33,7 @@ const ManageServices = () => {
   return (
     <div>
       <h2 className=" my-5 services-header p-3 m-3 mx-auto">
-        Manage Our Packages
+        Manage Our All Packages
       </h2>
       <div className="row row-cols-1 row-cols-md-3 m-2  ">
         {services.map((service) => (

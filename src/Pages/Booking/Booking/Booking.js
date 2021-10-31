@@ -13,6 +13,9 @@ const Booking = () => {
       .then((data) => setServices(data));
   }, []);
 
+  const confirmBooking = () => {
+    alert("Successfully Booked your Tour Package");
+  };
   return (
     <div className="  Booking-Container  " id="About">
       <div>
@@ -46,9 +49,24 @@ const Booking = () => {
                 <small>Please Confirm Your Booking</small>
                 <form class=" mx-auto Confiramtion">
                   <fieldset>
-                    <h4>Name :{user.displayName}</h4>
-                    <h4>Email :{user.email}</h4>
+                    <input
+                      placeholder="Name"
+                      type="text"
+                      value={user.displayName}
+                      tabindex="1"
+                      required
+                    />
                   </fieldset>
+                  <fieldset>
+                    <input
+                      placeholder="Email"
+                      type="email"
+                      value={user.email}
+                      tabindex="1"
+                      required
+                    />
+                  </fieldset>
+
                   <fieldset>
                     <textarea
                       placeholder="Address"
@@ -78,6 +96,7 @@ const Booking = () => {
 
                   <fieldset>
                     <button
+                      onClick={confirmBooking}
                       name="submit"
                       type="submit"
                       id="contact-submit"

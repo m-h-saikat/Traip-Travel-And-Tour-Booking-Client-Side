@@ -19,8 +19,7 @@ const AddService = () => {
   return (
     <div class=" AddService-container p-4">
       <h2 className="  AddServiceHeader p-3  mx-auto">
-        Add More Package
-      </h2>
+Add A New Package      </h2>
 
       <form
         id="contact"
