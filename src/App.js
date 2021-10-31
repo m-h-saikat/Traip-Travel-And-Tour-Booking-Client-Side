@@ -32,7 +32,7 @@ function App() {
             <Route path="/About">
               <About></About>
             </Route>
-
+           
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
             </PrivateRoute>

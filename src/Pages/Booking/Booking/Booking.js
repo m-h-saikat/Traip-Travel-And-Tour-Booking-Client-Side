@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import "./Booking.css";
 import useAuth from "../../../hooks/useAuth";
+import BookingBanner from '../../../images/BookingBanner.jpg';
+
 const Booking = () => {
   const { serviceId } = useParams();
   const [services, setServices] = useState({});
@@ -18,11 +20,8 @@ const Booking = () => {
   };
   return (
     <div className="  Booking-Container  " id="About">
-      <div>
-        <h2 className=" my-5 Booking-header p-3 m-3 mx-auto">
-          {" "}
-          Confirm Your Booking{" "}
-        </h2>
+        <div>
+        <img src={BookingBanner} alt="" className="img-fluid w-100" className="BookingBanner" />
       </div>
       <div className=" mb-4 ">
         <div className="row d-flex">
@@ -31,7 +30,7 @@ const Booking = () => {
               <img
                 class="card-img-top "
                 src={services.Img}
-                alt="Card image cap"
+                alt="Card image cap" 
               />
               <div class="card-body">
                 <h2 class="card-title text-danger">{services.name}</h2>

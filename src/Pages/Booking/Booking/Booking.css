@@ -33,3 +33,7 @@ form {
   border-radius: 20px;
   text-align: center;
 }
+.BookingBanner{
+  height: 300px;
+  width: 100%;
+}
